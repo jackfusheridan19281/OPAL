@@ -125,8 +125,8 @@ frontend/
   src/NetworkMap.jsx         Interactive Leaflet map
   package.json               Frontend dependencies and scripts
   package-lock.json          Locked frontend dependency versions
-requirements.txt             Pinned direct Python dependencies
 README.md                    Setup and project overview
+requirements.txt             Pinned direct Python dependencies
 ```
 
 ## API
