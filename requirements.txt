@@ -1,0 +1,8 @@
+# Direct Python dependencies from the original project's Python 3.10 environment.
+# Versions match the uploaded development snapshot; a clean end-to-end install
+# has not yet been verified on a second machine.
+fastapi==0.143.1
+uvicorn==0.54.0
+pydantic==2.14.1
+ortools==9.15.6755
+shapely==2.1.2
