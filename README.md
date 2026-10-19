@@ -1,4 +1,4 @@
-# Medical Transportation Network Recovery Optimizer
+# OPAL — Optimized Patient Assignment & Logistics
 
 A simulated medical transportation dispatch and recovery system. It assigns patients to eligible vehicles using network-wide constrained optimization, then recalculates assignments when a vehicle becomes unavailable or another disruption occurs.
 
