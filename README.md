@@ -150,6 +150,6 @@ For request/response schemas, use <http://127.0.0.1:8000/docs> while the backend
 
 ## Current limitations
 
-This is a **synthetic decision-support prototype**, not a live medical dispatch system. Travel times are estimated rather than obtained from a live routing service, and map lines are not street-level routes. The current optimizer limits each vehicle to two sequential trips. The reporting metrics and some disruption edge cases still need additional validation.
+This is a **synthetic decision-support prototype**, not a live medical dispatch system. Travel times are estimated rather than obtained from a live routing service, and map lines are not street-level routes yet. The current optimizer limits each vehicle to only two sequential trips for now. The reporting metrics and some disruption edge cases still need additional validation.
 
 The versions in `requirements.txt` were taken from the original Python 3.10 development environment. **A fresh cross-platform install and full end-to-end optimization run have not yet been verified.**
