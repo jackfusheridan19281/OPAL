@@ -4,6 +4,42 @@ A simulated medical transportation dispatch and recovery system. It assigns pati
 
 The project consists of a Python **OR-Tools CP-SAT** optimizer, a **FastAPI** backend, and a **React/Vite** operations dashboard.
 
+## Demo: Network Optimization and Recovery
+
+The following screenshots demonstrate how the optimizer assigns patients to vehicles, responds to disruptions, and identifies situations where transportation cannot be recovered. All scenarios use synthetic data.
+
+### 1. Initial Transportation Network
+
+The optimizer assigns patients to available vehicles while accounting for arrival deadlines, wheelchair accessibility, patient consent, and other operational constraints.
+
+![Initial transportation network](docs/images/initial-network.png)
+
+### 2. Vehicle Breakdown
+
+An assigned vehicle becomes unavailable (possibly from a breakdown), triggering the iterative optimization (recovery process).
+
+![Vehicle breakdown](docs/images/vehicle-breakdown.png)
+
+### 3. Successful Recovery
+
+Afterwards, the optimizer finds an eligible replacement vehicle and reassigns the affected patient.
+
+![Successful recovery](docs/images/successful-recovery.png)
+
+### 4. Stressed Network
+
+Under more difficult conditions (Stressed + Crisis), transportation demand can exceed the network's available resources.
+
+![Stressed network](docs/images/stressed-network.png)
+
+### 5. Failed Recovery and Explanations
+
+When a feasible replacement cannot be found, the system identifies unserved patients and explains why alternative vehicles were rejected leading to operatator review.
+
+![Failed recovery explanation](docs/images/failed-recovery.png)
+
+---
+
 ## What it does
 
 - Generates synthetic Boston or New York City patient, vehicle, and dialysis-facility networks in Normal, Stressed, and Crisis modes.
