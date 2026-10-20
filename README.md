@@ -22,7 +22,7 @@ An assigned vehicle becomes unavailable (possibly from a breakdown), triggering 
 
 ### 3. Successful Recovery
 
-Afterwards, the optimizer finds an eligible replacement vehicle and reassigns the affected patient.
+Afterwards, the optimizer finds an eligible replacement vehicle and reassigns the affected patient. Heart shows the initial patient whose ride was cancelled due to disruption but then recovered through reoptimization. The blue rewind symbol shows a patient who was affected (reassigned) to accommodate for this recovery.
 
 ![Successful recovery](docs/images/successful-recovery.png)
 
